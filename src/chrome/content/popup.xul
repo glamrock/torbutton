@@ -28,11 +28,6 @@
                   accesskey="&torbutton.context_menu.preferences.key;"
                   insertafter="context-stop"
                   oncommand="torbutton_open_prefs_dialog()"/>
-        <menuitem id="torbutton-about"
-                  label="&torbutton.context_menu.about;"
-                  accesskey="&torbutton.context_menu.about.key;"
-                  insertafter="context-stop"
-                  oncommand="window.open('chrome://torbutton/content/about.xul', '', 'chrome,centerscreen');"/>
         <menuitem id="torbutton-networksettings"
                   label="&torbutton.context_menu.networksettings;"
                   accesskey="&torbutton.context_menu.networksettings.key;"
@@ -46,8 +41,7 @@
                   hidden="true"/>
         </vbox>
         <vbox>
-         <!-- The following SVG is used to display a Tor circuit diagram for the current tab.
-              It is not displayed unless activated by tor-circuit-display.js. -->
+         <!-- The following SVG is used to display a Tor circuit diagram for the current tab. It is not displayed unless activated by tor-circuit-display.js. -->
          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" baseProfile="full"
               width="290" height="140" id="tor-circuit" style="display:none;"> 
               <rect x="0" y="0" width="100%" height="100%" fill="#e8f4f4" />
